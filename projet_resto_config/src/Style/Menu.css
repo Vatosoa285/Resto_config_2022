@@ -1,0 +1,29 @@
+.menu-open {
+    color: black;
+	background-color: palevioletred;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 300px;
+}
+
+
+.menu-closed {
+    padding: 32px;
+	width: 200px;
+}
+
+
+.open-menu-button {
+    position: absolute;
+	right :0px;
+	top:0px;
+}
+
+
+.close-menu-button {
+    position: absolute;
+	right :0px;
+	top:0px;
+}
