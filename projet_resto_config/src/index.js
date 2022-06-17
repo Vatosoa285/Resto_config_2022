@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Style/index.css';
-import App from './Components/App';
+import Menu from './Components/Menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Menu />
   </React.StrictMode>
 );
 

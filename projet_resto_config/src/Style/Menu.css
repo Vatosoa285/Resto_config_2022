@@ -1,11 +1,26 @@
 .menu-open {
     color: black;
-	background-color: palevioletred;
-	padding: 16px;
+	background-color: rgb(229, 140, 179);
+	padding: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 300px;
+	width: 250px;
+    position : absolute;
+    height : 100%; 
+}
+
+
+.liste-menu {
+    list-style-type: none;
+    margin-left : 10px;
+    margin-right : 10px;
+    padding: 0px;
+}
+
+
+.titre-menu {
+    text-align: center;
 }
 
 
@@ -17,13 +32,27 @@
 
 .open-menu-button {
     position: absolute;
-	right :0px;
-	top:0px;
+    background: url(../assets/menu.png) no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 27px;
+    padding-bottom: 2px;
+    width: 28px;
+    left : 5px;
+    top : 5px;
 }
 
 
 .close-menu-button {
     position: absolute;
-	right :0px;
-	top:0px;
+    background: url(../assets/menu.png) no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 27px;
+    padding-bottom: 2px;
+    width: 28px;
+    left : 5px;
+    top : 5px;
 }

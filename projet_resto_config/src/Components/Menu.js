@@ -6,16 +6,18 @@ import ListeMenu from './ListeMenu'
 function Menu(){
     const [isOpen, setIsOpen] = useState(true)
     return isOpen? (
-        <div className='menu-open'>
-            <div>
-				<h2>Menu</h2>
-                <ListeMenu/>
+        <div className='menu-open' >
+            <div className='titre-menu'>
+				<h2 >Menu</h2>
             </div>
-            <button className='close-menu-button' onClick={() => setIsOpen(false)}>x</button>
+            <ListeMenu/>
+            <button className='close-menu-button' onClick={() => setIsOpen(false)}></button>
         </div>
     ) : (
         <div className='menu-closed'>
-			<button className='open-menu-button' onClick={() => setIsOpen(true)}> Menu </button>
+			<button className='open-menu-button' onClick={() => setIsOpen(true)}></button>
 		</div>
     )
 }
+
+export default Menu
