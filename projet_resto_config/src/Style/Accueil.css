@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+    position :absolute;
+    right: 55%;
+    left: 45%;
+    top : 0%;
+    flex :1;
+    justify-content: space-around;
+}
