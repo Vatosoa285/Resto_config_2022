@@ -1,12 +1,12 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
 
-function Roles() {
+function Admin() {
     return(
     <div>
-        <h1>GESTION DES ROLES</h1>
+        <h1>CONTACT ADMINISTRATEURS</h1>
     </div>
     )
 }
 
-export default Roles
+export default Admin

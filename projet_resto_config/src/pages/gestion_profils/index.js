@@ -1,12 +1,13 @@
+
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
 
-function Roles() {
+function Profils() {
     return(
     <div>
-        <h1>GESTION DES ROLES</h1>
+        <h1>GESTION DES PROFILS</h1>
     </div>
     )
 }
 
-export default Roles
+export default Profils

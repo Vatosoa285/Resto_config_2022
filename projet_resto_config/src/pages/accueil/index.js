@@ -7,7 +7,6 @@ function Accueil() {
     return(
     <div>
         <h1>ACCUEIL</h1>
-        <Header/>
     </div>
     )
 }

@@ -1,12 +1,13 @@
+
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
 
-function Roles() {
+function Mdp() {
     return(
     <div>
-        <h1>GESTION DES ROLES</h1>
+        <h1>REINITIALISATION MOTS DE PASSE</h1>
     </div>
     )
 }
 
-export default Roles
+export default Mdp
