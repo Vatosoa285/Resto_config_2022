@@ -21,10 +21,10 @@ import Mdp from '../pages/reinitialisation_mdp';
 import Suivi from '../pages/suivi_activite';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
     <BrowserRouter>
-    <Header></Header>
+    <Header></Header> 
     <Routes>
     <Route path="/" element={ <Accueil/>} />
     <Route path="/activites" element={<Activites/>} />
