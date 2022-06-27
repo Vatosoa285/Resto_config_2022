@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Liens() {
+function Liens({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES LIENS D'INFORMATION");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES LIENS D'INFORMATION</h1>
+     
     </div>
     )
 }

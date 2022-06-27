@@ -18,7 +18,7 @@
  }
 
 .FILL{
-    flex:1;
+    flex:0.6;
 }
 
 .SIDE{
@@ -34,21 +34,31 @@
     margin :auto;
 }
 
+.titre {
+    flex : 3;
+    text-align: center;
+    position : relative;
+    margin-top: 2.8%;
+    margin-left: -5%;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: calc(2vw);
+}
 
-
-.RSTO_MENU{
+.RSTO_MENU{ /* Juste le background pas cliquable */
     flex: 1;
     background-image:url("../assets/cercle_menu.png");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    margin: 1% -13%;
+    margin: 1% -11%;
     position: relative;
     margin-top: -1.5%;
 }
 
-.RSTO_DECO{
+.RSTO_DECO{ /* Juste le background pas cliquable */
     flex: 1;
     background-image:url("../assets/cercle_deco.png");
     background-size: 40%;
@@ -91,7 +101,7 @@
 
 
 
-.menuOpen-button { /*quand le menu est ouvert*/
+.menuOpen-button { /*permet de cliquer quand le menu est ouvert pour le fermer*/
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
@@ -102,20 +112,20 @@
     margin-top: 24.5%;
     z-index: 1;
     padding :0;
-    
+    flex: 0.5;
     
 }
 
 
-.menuClose-button { /* quand le menu est fermé*/
+.menuClose-button { /*permet de cliquer quand le menu est fermé pour l'oublier*/
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor:pointer;
-    height: 70px;
+    height: 90px;
     width : 70px;
     position: relative;
-    margin-top: 24.5%;
+    margin-top: 15%;
     z-index: 10;
 }
 
@@ -124,10 +134,10 @@
     background-color: transparent;
     border: none;
     cursor:pointer;
-    height: 70px;
-    width : 70px;
+    height: 90px;
+    width : 80px;
     position: relative;
-    margin-top: 24%;
+    margin-top: 15%;
     z-index: 10;
 }
 

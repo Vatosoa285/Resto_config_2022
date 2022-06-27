@@ -1,12 +1,17 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
 import coluche from '../../assets/coluche.jpg'
+import {useEffect} from 'react'
 
-function Accueil() {
+function Accueil({updateTitle}) {
+
+    useEffect(() => {
+        updateTitle("ACCUEIL");
+      }, []);
+    
     return(
     <div>
-        <h1>ACCUEIL</h1>
-        <br></br><br></br> <br></br><br></br> <br></br>
+        
        <img className='image-accueil' src={coluche}/> 
     </div>
     )

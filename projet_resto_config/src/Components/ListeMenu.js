@@ -32,8 +32,8 @@ function ListeMenu() {
             <li><NavLink to="/liens">Gestion des liens d'information</NavLink></li>
             <li><NavLink to="/suivi">Suivi d'activité</NavLink></li>
             <li><NavLink to="/message">Message d'information</NavLink></li>
-            <li><NavLink to="/mdp">Réinitialisation mot de passe</NavLink></li>
-            <li><NavLink to="/contact">Contact administrateur</NavLink></li>
+            <li><NavLink to="/mdp">Réinitialisation des mots de passe</NavLink></li>
+            <li><NavLink to="/contact">Contact administrateurs</NavLink></li>
         </ul>
         </nav>
     )

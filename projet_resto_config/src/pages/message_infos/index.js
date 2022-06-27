@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Messages() {
+function Messages({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES MESSAGES D'INFORMATION");
+      }, []);
     return(
     <div>
-        <h1>MESSAGES D'INFORMATION</h1>
+     
     </div>
     )
 }

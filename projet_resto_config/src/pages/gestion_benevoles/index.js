@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Benevoles() {
+function Benevoles({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES BENEVOLES");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES BENEVOLES</h1>
+     
     </div>
     )
 }

@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Suivi() {
+function Suivi({updateTitle}) {
+    useEffect(() => {
+        updateTitle("SUIVI DES ACTIVITES");
+      }, []);
     return(
     <div>
-        <h1>SUIVI DES ACTIVITES</h1>
+     
     </div>
     )
 }

@@ -1,16 +1,17 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Activites() {
+function Activites({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES ACTIVITES");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES ACTIVITES</h1>
-        <br></br><br></br>
-       <button className='pink-button'>Ajouter</button>
-       <button className='blue-button'>Supprimer</button>
+     
     </div>
-    )
+    )   
 }
 
 export default Activites

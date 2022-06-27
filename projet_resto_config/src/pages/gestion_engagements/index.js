@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Engagements() {
+function Engagements({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES ENGAGEMENTS");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES ENGAGEMENTS</h1>
+     
     </div>
     )
 }

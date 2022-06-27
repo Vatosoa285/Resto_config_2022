@@ -1,10 +1,14 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Roles() {
+function Roles({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES ROLES");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES ROLES</h1>
+     
     </div>
     )
 }

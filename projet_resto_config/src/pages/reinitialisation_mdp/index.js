@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Mdp() {
+function Mdp({updateTitle}) {
+    useEffect(() => {
+        updateTitle("REINITIALISATION DES MOTS DE PASSE");
+      }, []);
     return(
     <div>
-        <h1>REINITIALISATION MOTS DE PASSE</h1>
+     
     </div>
     )
 }

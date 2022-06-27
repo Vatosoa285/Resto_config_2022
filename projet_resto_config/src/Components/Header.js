@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg"
 import { useState } from 'react'
 import ListeMenu from './ListeMenu'
 
-function Header({ children }) {
+function Header({title}) {
     const [isOpen, setIsOpen] = useState(true)
     const [connected, setConnected] = useState(true)
     return isOpen? ( //quand le menu est ouvert
@@ -15,7 +15,9 @@ function Header({ children }) {
                     <img className={"RSTO_logo"} src={logo} alt={"logo"}/>
                 </div>
                 <div className={"FILL"}/>
-                <div className={"FILL"}/>
+                <div className={"titre"}>
+                    {title}
+                </div>
                 <div className={"FILL"}/>
                 <div className={"RSTO_MENU"}>
                 <button className='menuOpen-button' onClick={() => setIsOpen(false)}></button>
@@ -39,7 +41,9 @@ function Header({ children }) {
                     <img className={"RSTO_logo"} src={logo} alt={"logo"}/>
                 </div>
                 <div className={"FILL"}/>
-                <div className={"FILL"}/>
+                <div className={"titre"}>
+                    {title}
+                </div>
                 <div className={"FILL"}/>
                 <div className={"RSTO_MENU"}>
                 <button className='menuClose-button' onClick={() => setIsOpen(true)}></button>

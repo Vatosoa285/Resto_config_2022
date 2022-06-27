@@ -1,10 +1,15 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Acces() {
+function Acces({updateTitle}) {
+    
+    useEffect(() => {
+        updateTitle("GESTION DES DROITS D'ACCES");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES DROITS D'ACCES</h1>
+     
     </div>
     )
 }

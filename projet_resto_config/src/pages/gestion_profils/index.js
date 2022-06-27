@@ -1,11 +1,15 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
+import {useEffect} from 'react'
 
-function Profils() {
+function Profils({updateTitle}) {
+    useEffect(() => {
+        updateTitle("GESTION DES PROFILS");
+      }, []);
     return(
     <div>
-        <h1>GESTION DES PROFILS</h1>
+     
     </div>
     )
 }
