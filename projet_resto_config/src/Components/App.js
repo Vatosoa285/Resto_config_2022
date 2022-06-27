@@ -21,6 +21,9 @@ import Mdp from '../pages/reinitialisation_mdp';
 import Suivi from '../pages/suivi_activite';
 
 function App() {
+
+  const [title, updateTitle] = useState([])
+
   return ( 
     <div className="App">
     <BrowserRouter>
