@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 0%;
-    background: linear-gradient(180deg, white 30%,#5AC4F3 30%, #5AC4F3 50%,white 50%);
+    background: linear-gradient(180deg, white 40%,#5AC4F3 40%, #5AC4F3 60%,white 60%);
     margin-bottom: 0px;
     z-index: 9;
 }
@@ -31,19 +31,18 @@
     max-width: 500px; /*actual image width*/
     height: auto; /* maintain aspect ratio*/
     flex: 1;
-    margin :auto;
+    margin :auto 10%;
 }
 
 .titre {
     flex : 3;
     text-align: center;
     position : relative;
-    margin-top: 2.8%;
-    margin-left: -5%;
     font-weight: 600;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     font-size: calc(2vw);
+    margin: auto 5% auto auto;
 }
 
 .RSTO_MENU{ /* Juste le background pas cliquable */
@@ -53,9 +52,9 @@
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    margin: 1% -11%;
+    margin: auto -10%;
     position: relative;
-    margin-top: -1.5%;
+
 }
 
 .RSTO_DECO{ /* Juste le background pas cliquable */
@@ -66,8 +65,7 @@
     background-position: center;
     display: block;
     position : relative;
-    margin : 1%;
-    margin-top: -1.5%;
+    margin : auto auto ;
 }
 
 
@@ -106,13 +104,11 @@
     background-color: transparent;
     border: none;
     cursor:pointer;
-    height: 70px;
+    height: 88px;
     width : 70px;
     position: relative;
-    margin-top: 24.5%;
-    z-index: 1;
-    padding :0;
-    flex: 0.5;
+    margin : auto 0%;
+    z-index: 10;
     
 }
 
@@ -122,10 +118,10 @@
     background-repeat: no-repeat;
     border: none;
     cursor:pointer;
-    height: 90px;
+    height: 88px;
     width : 70px;
     position: relative;
-    margin-top: 15%;
+    margin : auto 0%;
     z-index: 10;
 }
 
@@ -134,10 +130,10 @@
     background-color: transparent;
     border: none;
     cursor:pointer;
-    height: 90px;
-    width : 80px;
+    height: 88px;
+    width : 70px;
     position: relative;
-    margin-top: 15%;
+    margin : auto 0%;
     z-index: 10;
 }
 

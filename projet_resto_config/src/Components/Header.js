@@ -20,7 +20,7 @@ function Header({title}) {
                 </div>
                 <div className={"FILL"}/>
                 <div className={"RSTO_MENU"}>
-                <button className='menuOpen-button' onClick={() => setIsOpen(false)}></button>
+                <button className='menuOpen-button'  onClick={() => setIsOpen(false)}></button>
                 </div>
                 <div className={"RSTO_DECO"}>
                 <button className='deco-button' onClick={() => window.confirm("Voulez-vous vraiment vous déconnecter ?")}></button>
