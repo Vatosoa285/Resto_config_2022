@@ -30,7 +30,7 @@ function App() {
     <BrowserRouter>
     <Header title={title}></Header> 
     <Routes>
-    <Route path="/" element={ <Accueil updateTitle={updateTitle} title={title}/>} />
+    <Route exact path="/" element={ <Accueil updateTitle={updateTitle} title={title}/>} />
     <Route path="/activites" element={<Activites updateTitle={updateTitle} title={title}/>} />
     <Route path='/sites' element={<Sites updateTitle={updateTitle} title={title}/>}/>
     <Route path='/roles' element={<Roles updateTitle={updateTitle} title={title}/>}/>

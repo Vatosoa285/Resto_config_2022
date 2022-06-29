@@ -1,0 +1,43 @@
+
+.activite-item {
+    margin-bottom: 5px;
+    flex-direction: line;
+    position: relative;
+    font-weight: 200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    display: inline-flex;
+}
+
+.activite-nom {
+    position:relative;
+    text-align: left;
+    margin-right: 2%;
+}
+
+.activite-responsable {
+    position: relative;
+    text-align: left;
+}
+
+.activite-buttons{
+    position : relative;
+}
+
+.activite-list {
+    list-style-type: none;
+    border:solid 3px black;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+	padding: 0px;
+	display: block;
+    position: relative;
+    left : 40%; 
+    text-align: left;
+}
+
+
+.FILL{
+    flex:1;
+}
