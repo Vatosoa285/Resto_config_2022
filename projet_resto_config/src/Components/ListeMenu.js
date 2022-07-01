@@ -21,7 +21,7 @@ function ListeMenu() {
     return (
         <nav>
         <ul className='liste-menu'>
-            <li><NavLink to="/">Accueil</NavLink></li>
+            <li><NavLink to="/accueil">Accueil</NavLink></li>
             <li><NavLink to="/activites">Gestion des activités</NavLink></li>
             <li><NavLink to="/sites">Gestion des sites</NavLink></li>
             <li><NavLink to="/roles">Gestion des rôles</NavLink></li>

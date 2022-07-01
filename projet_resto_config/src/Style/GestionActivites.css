@@ -12,7 +12,7 @@
 .activite-nom {
     position:relative;
     text-align: left;
-    margin-right: 2%;
+    padding-right: 3%;
 }
 
 .activite-responsable {
@@ -24,16 +24,27 @@
     position : relative;
 }
 
+.ajout-button{
+    position : absolute;
+    margin-left: 52.5%;
+    margin-top: -1.5%;
+}
+
+.searchbar{
+    position : relative;
+    margin-left:-8%;
+}
+
 .activite-list {
     list-style-type: none;
+    display:block;
     border:solid 3px black;
     border-radius: 10px;
-    width: max-content;
-    height: max-content;
+    width: 50%;
+    height: auto;
 	padding: 0px;
-	display: block;
     position: relative;
-    left : 40%; 
+    left : 0%; 
     text-align: left;
 }
 

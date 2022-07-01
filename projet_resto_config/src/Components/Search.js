@@ -1,11 +1,12 @@
 import '../pages/gestion_activites/index'
 import { Navigate, useNavigate } from 'react-router-dom';
+import '../Style/GestionActivites.css'
 
 
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => (
   //barre de recherches
-    <form action="/" method="get" >
+    <form className='searchbar' action="/" method="get" >
         <input
             type="text"
             id="searchBar"

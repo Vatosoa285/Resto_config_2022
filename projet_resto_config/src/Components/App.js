@@ -20,6 +20,7 @@ import Sites from '../pages/gestion_sites';
 import Messages from '../pages/message_infos';
 import Mdp from '../pages/reinitialisation_mdp';
 import Suivi from '../pages/suivi_activite';
+import Login from '../pages/authentification';
 
 function App() {
 
@@ -30,7 +31,8 @@ function App() {
     <BrowserRouter>
     <Header title={title}></Header> 
     <Routes>
-    <Route exact path="/" element={ <Accueil updateTitle={updateTitle} title={title}/>} />
+    <Route exact path="/" element={ <Login updateTitle={updateTitle} title={title}/>} />
+    <Route path="/accueil" element={ <Accueil updateTitle={updateTitle} title={title}/>} />
     <Route path="/activites" element={<Activites updateTitle={updateTitle} title={title}/>} />
     <Route path='/sites' element={<Sites updateTitle={updateTitle} title={title}/>}/>
     <Route path='/roles' element={<Roles updateTitle={updateTitle} title={title}/>}/>
