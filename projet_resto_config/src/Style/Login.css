@@ -3,7 +3,10 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0%;
     background-color: #5ac4f3;
-    padding-bottom: 19.5%;
+    padding-bottom: 14.5%;
+    border : solid;
+    border : 20px;
+    border-color: black;
 }
 
 .button{
@@ -13,7 +16,7 @@
 
 .logo {
     margin-top: 1%;
-    width: 10%;
+    width: 15%;
     flex: 1;
 }
 
@@ -21,6 +24,6 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0%;
     background-color: #5ac4f3;
-    padding-bottom: 25.5%;
+    padding-bottom: 20.5%;
 }
 

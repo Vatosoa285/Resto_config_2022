@@ -19,8 +19,7 @@ function Login() {
   // Verifie que les identifiants sont valides avant de mettre submit à true
   const handleSubmit = (err) => {
         err.preventDefault();
-       if (validate()) {
-        setIsSubmit(true);
+       if (validate()) { setIsSubmit(true);
       }   
     }
   
@@ -31,7 +30,7 @@ function Login() {
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
       if (!regex.test(email)) {
         window.alert("L'adresse mail n'a pas un format valide")
-         return false
+        return false
       }
       else {return true}
   }
@@ -39,9 +38,9 @@ function Login() {
   // si l'authentification est réussie on est redirigés vers l'accueil
   useEffect(() => {
       if (isSubmit) {
-        setIsSubmit(false)
-        document.getElementById("id").value=''
-        navigate('/accueil')
+        setIsSubmit(false);
+        document.getElementById("id").value='';
+        navigate('/accueil');
       }
   })
 
@@ -52,7 +51,7 @@ function Login() {
       <h1>Connexion</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          <p>Identifiant</p>
+          <p>Adresse mail</p>
           <input type="identifiant" id="id" onChange={e => setUserName(e.target.value)}/>
         </label>
         <label>
@@ -60,7 +59,7 @@ function Login() {
           <input type="password" id= "password" onChange={e => setPassword(e.target.value)}/>
         </label>
         <div className='button'>
-          <button type="submit">OK</button>
+          <button type="submit">Se connecter</button>
         </div>
         <NavLink to="/oublie">Mot de passe oublié ?</NavLink>    
       </form>
