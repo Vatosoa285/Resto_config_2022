@@ -1,7 +1,7 @@
 
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
-import {useEffect} from 'react'
+import React, {useEffect} from 'react'
 
 function Liens({updateTitle}) {
     useEffect(() => {

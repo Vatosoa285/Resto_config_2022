@@ -1,6 +1,6 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
-import {useEffect} from 'react'
+import React, {useEffect} from 'react'
 
 function Roles({updateTitle}) {
     useEffect(() => {
@@ -8,7 +8,7 @@ function Roles({updateTitle}) {
       }, []);
     return(
     <div>
-     
+     <h1>test</h1>
     </div>
     )
 }

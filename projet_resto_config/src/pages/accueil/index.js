@@ -1,7 +1,7 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
 import coluche from '../../assets/coluche.jpg'
-import {useEffect} from 'react'
+import React, {useEffect} from 'react'
 
 function Accueil({updateTitle}) {
 
