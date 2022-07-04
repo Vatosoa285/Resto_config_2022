@@ -3,10 +3,19 @@ import '../Style/Header.css'
 import logo from "../assets/logo.svg"
 import { useState } from 'react'
 import ListeMenu from './ListeMenu'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 function Header({title}) {
     const [isOpen, setIsOpen] = useState(true)
     const [connected, setConnected] = useState(true)
+    const navigate = useNavigate();
+
+    const deconnexion = () => {
+        if (window.confirm("Voulez-vous vraiment vous déconnecter ?") ) {
+            navigate("/");
+        }
+    }
+
     return isOpen? ( //quand le menu est ouvert
         <div className={""}>
             <div className='RSTO_header'>
@@ -23,7 +32,7 @@ function Header({title}) {
                 <button className='menuOpen-button'  onClick={() => setIsOpen(false)}></button>
                 </div>
                 <div className={"RSTO_DECO"}>
-                <button className='deco-button' onClick={() => window.confirm("Voulez-vous vraiment vous déconnecter ?")}></button>
+                <button className='deco-button' onClick={() => deconnexion()}></button>
                 </div>
                 <div className={"SIDE"}/>
             </div>
@@ -49,7 +58,7 @@ function Header({title}) {
                 <button className='menuClose-button' onClick={() => setIsOpen(true)}></button>
                 </div>
                 <div className={"RSTO_DECO"}>
-                <button className='deco-button' onClick={() => window.confirm("Voulez-vous vraiment vous déconnecter ?")}></button>
+                <button className='deco-button' onClick={() => deconnexion()}></button>
                 </div>
             <div className={"SIDE"}/>
          </div>
