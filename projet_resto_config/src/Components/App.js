@@ -21,6 +21,7 @@ import Messages from '../pages/message_infos';
 import Mdp from '../pages/reinitialisation_mdp';
 import Suivi from '../pages/suivi_activite';
 import Login from '../pages/authentification';
+import Oublie from '../pages/authentification/oublie';
 
 function App() {
 
@@ -29,22 +30,23 @@ function App() {
   return ( 
     <div className="App">
     <BrowserRouter>
-    <Header title={title}></Header> 
+    
     <Routes>
-    <Route exact path="/" element={ <Login updateTitle={updateTitle} title={title}/>} />
-    <Route path="/accueil" element={ <Accueil updateTitle={updateTitle} title={title}/>} />
-    <Route path="/activites" element={<Activites updateTitle={updateTitle} title={title}/>} />
-    <Route path='/sites' element={<Sites updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/roles' element={<Roles updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/benevoles' element={<Benevoles updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/engagements' element={<Engagements updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/profils' element={<Profils updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/acces' element={<Acces updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/liens' element={<Liens updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/message' element={<Messages updateTitle={updateTitle} title={title} />}/>
-    <Route path='/mdp' element={<Mdp updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/suivi' element={<Suivi updateTitle={updateTitle} title={title}/>}/>
-    <Route path='/contact' element={<Admin updateTitle={updateTitle} title={title}/>}/>
+    <Route exact path="/" element={ <Login/>} />
+    <Route path="/oublie" element={ <Oublie/>} />
+    <Route path="/accueil" element={<div> <Header title={title}></Header>  <Accueil updateTitle={updateTitle} title={title}/> </div>} />
+    <Route path="/activites" element={<div> <Header title={title}></Header><Activites updateTitle={updateTitle} title={title}/></div>} />
+    <Route path='/sites' element={<div> <Header title={title}></Header><Sites updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/roles' element={<div> <Header title={title}></Header><Roles updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/benevoles' element={<div> <Header title={title}></Header><Benevoles updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/engagements' element={<div> <Header title={title}></Header><Engagements updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/profils' element={<div> <Header title={title}></Header><Profils updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/acces' element={<div> <Header title={title}></Header><Acces updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/liens' element={<div> <Header title={title}></Header><Liens updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/message' element={<div> <Header title={title}></Header><Messages updateTitle={updateTitle} title={title} /></div>}/>
+    <Route path='/mdp' element={<div> <Header title={title}></Header><Mdp updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/suivi' element={<div> <Header title={title}></Header><Suivi updateTitle={updateTitle} title={title}/></div>}/>
+    <Route path='/contact' element={<div> <Header title={title}></Header><Admin updateTitle={updateTitle} title={title}/></div>}/>
     </Routes>
     </BrowserRouter>
     </div>
