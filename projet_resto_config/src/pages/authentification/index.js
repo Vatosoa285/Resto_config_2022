@@ -59,7 +59,7 @@ function Login() {
           <input type="password" id= "password" onChange={e => setPassword(e.target.value)}/>
         </label>
         <div className='button'>
-          <button type="submit">Se connecter</button>
+          <button type="submit"><NavLink to="/oublie">Mot de passe oublié ?</NavLink></button>
         </div>
         <NavLink to="/oublie">Mot de passe oublié ?</NavLink>    
       </form>
