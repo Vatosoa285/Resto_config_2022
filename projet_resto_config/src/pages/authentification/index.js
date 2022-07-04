@@ -19,16 +19,18 @@ function Login() {
   // Verifie que les identifiants sont valides avant de mettre submit à true
   const handleSubmit = (err) => {
         err.preventDefault();
-       if (validate()) {setIsSubmit(true)}
-        
+       if (validate()) {
+        setIsSubmit(true);
+      }   
     }
   
     // Conditions sur les identifiants
     const validate = () => {
       var email = document.getElementById("id").value;
+      var mdp = document.getElementById("password").value;
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
       if (!regex.test(email)) {
-         window.alert('mail invalide')
+        window.alert("L'adresse mail n'a pas un format valide")
          return false
       }
       else {return true}
@@ -37,9 +39,10 @@ function Login() {
   // si l'authentification est réussie on est redirigés vers l'accueil
   useEffect(() => {
       if (isSubmit) {
-          return (navigate('/accueil'));
+        setIsSubmit(false)
+        document.getElementById("id").value=''
+        navigate('/accueil')
       }
-
   })
 
 

@@ -3,7 +3,7 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0%;
     background-color: #5ac4f3;
-    padding-bottom: 20%;
+    padding-bottom: 19.5%;
 }
 
 .button{
@@ -15,5 +15,12 @@
     margin-top: 1%;
     width: 10%;
     flex: 1;
+}
+
+.oublie{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0%;
+    background-color: #5ac4f3;
+    padding-bottom: 25.5%;
 }
 
