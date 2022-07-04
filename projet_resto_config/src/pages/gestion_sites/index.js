@@ -1,6 +1,6 @@
 import '../../Style/Accueil.css'
 import '../../Style/Button.css'
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 
 function Sites({updateTitle}) {
     useEffect(() => {
@@ -8,7 +8,7 @@ function Sites({updateTitle}) {
       }, []);
     return(
     <div>
-     <h1> </h1>
+     
     </div>
     )
 }

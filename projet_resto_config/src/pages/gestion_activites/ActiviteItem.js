@@ -1,6 +1,5 @@
 import '../../Style/GestionActivites.css'
 import '../../Style/Button.css'
-import React, { Component } from 'react';
 
 function handleClickModifier(nomActivité) {
     window.confirm(`Vous voulez modifier ${nomActivité} ?`)
