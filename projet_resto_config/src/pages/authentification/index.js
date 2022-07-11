@@ -123,11 +123,11 @@ import logo from "../../assets/logo.svg"
 import {React, useState, useEffect} from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import {userContext} from '../../contexts/userContext';
+
 import {sendAPI} from '../../Components/adapter_functions/sendAPI';
+//import * as Device from 'expo-device';
 
 
-import * as Device from 'expo-device';
-import * as SecureStore from 'expo-secure-store';
 
 
 function Login() {
@@ -138,7 +138,7 @@ function Login() {
 
 
   const navigate = useNavigate();
-  const registerForPushNotificationsAsync = React.useContext(userContext).registerForPushNotificationsAsync;
+  //const registerForPushNotificationsAsync = React.useContext(userContext).registerForPushNotificationsAsync;
 
   function checkPassword() {
 		sendAPI('AUT', 'AP_LOGIN', {'email':'amauryalric@gmail.com', 'motDePasse':'Rdc-3131'})	
@@ -146,7 +146,7 @@ function Login() {
 			console.log(data);
 
 			const device = await Device.getDeviceTypeAsync();
-			const token = await registerForPushNotificationsAsync(device);
+			//const token = await registerForPushNotificationsAsync(device);
 
 		})
 		.catch((error) => {
@@ -211,3 +211,4 @@ function Login() {
     
 
 export default Login
+
