@@ -1,0 +1,76 @@
+
+.ajout-button{
+    position : absolute;
+    margin-left: 52.5%;
+    margin-top: -1.5%;
+}
+
+.searchbar{
+    position : relative;
+    margin-left:-8%;
+}
+
+.activite-list {
+    list-style-type: none;
+    display:block;
+    border:solid 3px black;
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+	padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0.5%;
+    position: relative;
+    left : 20%; 
+    text-align: center;
+    }
+
+
+.container {
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 2px;
+}
+
+.container>* {
+    margin: 0 10px ;
+    flex: 1;
+    padding-left: 7.5%;
+}
+
+.container-titre {
+    border:solid 3px black;
+    border-radius: 10px;
+    width: 60%;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    padding-right: 0px;
+    left : 20%;
+    position: relative;
+    text-align: center;
+}
+
+.container-titre>* {
+    margin: 0 10px ;
+    flex: 1;
+    padding-right: 0%;
+    padding-left: 7.5%;
+}
+
+.ajout-benevole{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0%;
+    padding-bottom: 14.5%;
+    border : solid;
+    border : 20px;
+    border-color: black;
+    column-count: 3;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.button{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
