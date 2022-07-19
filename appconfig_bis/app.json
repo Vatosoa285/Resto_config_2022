@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Bénévole aux Restos du Cœur - AD 31",
+    "slug": "AwesomeConfigProject",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "owner": "stajcatra"
+  }
+}

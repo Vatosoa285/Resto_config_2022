@@ -1,0 +1,23 @@
+.pink-button {
+    position: relative;
+    background-color: #e5007d;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 40px;
+    flex:1;    
+}
+
+.blue-button {
+    position: relative;
+    background-color:#5ac4f3;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 40px;
+    flex:1;
+}
